@@ -1,0 +1,25 @@
+{
+    "name": "ITX Bookmark Sync",
+    "manifest_version": 3,
+    "version": "0.0.2",
+    "author": "Bryan Wood",
+    "description": "Bookmark manager for Chromium Browsers",
+    "icons": {},
+    "action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "homepage_url": "https://itanex.ninja",
+    "minimum_chrome_version": "89.0.4389.72",
+    "offline_enabled": true,
+    "options_page": "options.html",
+    "permissions": [
+        "bookmarks"
+    ],
+    "short_name": "itx-bookmark-sync"
+}
